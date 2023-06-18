@@ -61,37 +61,53 @@ class _RegisterState extends State<Register> {
                 ),
                 TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    hintText: "Enter your email",
-                    suffixIcon: Icon(Icons.email_outlined),
-                  ),
-                ),
+                suffixIcon: Icon(Icons.email_outlined),
+                fillColor: Colors.white,
+                filled: true,
+                floatingLabelBehavior: FloatingLabelBehavior.always,
+                label: Text("Email"),
+                hintText: "Enter your email",
+                hintStyle:
+                TextStyle(fontSize: 16, color: Colors.grey),
+                border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+                focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.grey))
+            ),
+          ),
                 SizedBox(
                   height: 10,
                 ),
                 TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    hintText: "Password",
-                    suffixIcon: Icon(Icons.lock),
-                  ),
-                ),
+                suffixIcon: Icon(Icons.lock),
+                fillColor: Colors.white,
+                filled: true,
+                floatingLabelBehavior: FloatingLabelBehavior.always,
+                labelText: "password",
+                labelStyle: TextStyle(color: Colors.grey),
+                hintText: "Enter your password",
+                hintStyle:
+                TextStyle(fontSize: 16, color: Colors.grey),
+                border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+              focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.grey))
+            ),
+          ),
                 SizedBox(
                   height: 10,
                 ),
                 TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    hintText: "Confirm password",
-                    suffixIcon: Icon(Icons.lock),
-                  ),
-                ),
+                  decoration:  InputDecoration(
+                suffixIcon: Icon(Icons.lock),
+                fillColor: Colors.white,
+                filled: true,
+                floatingLabelBehavior: FloatingLabelBehavior.always,
+                labelText: "confirm password",
+                hintText: "Re-enter your password",
+                hintStyle:
+                TextStyle(fontSize: 16, color: Colors.grey),
+                border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+                focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.grey))
+            ),
+          ),
                 SizedBox(
                   height: 15,
                 ),
